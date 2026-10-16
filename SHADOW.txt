@@ -1,0 +1,6 @@
+shadow prebuilt repo: pigweed (target)
+  upstream: external/pigweed
+  api-level: 32 (branch 32-20261016)
+  blobs: org.blisslabs.ag.pigweed.apex org.blisslabs.ag.pigweed.dev.apex org.blisslabs.ag.pigweed.doc.apex
+  dev-src: prebuilt apex + license
+  date: 2026-10-16

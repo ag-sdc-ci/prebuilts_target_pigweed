@@ -1,0 +1,26 @@
+package {
+    default_applicable_licenses: ["external_pigweed_license"],
+}
+
+license {
+    name: "external_pigweed_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: ["LICENSE"],
+}
+
+prebuilt_apex {
+    name: "org.blisslabs.ag.pigweed",
+    apex_name: "org.blisslabs.ag.pigweed",
+    source_apex_name: "org.blisslabs.ag.pigweed",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.pigweed.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.pigweed.apex",
+    prefer: true,
+    installable: true,
+}
